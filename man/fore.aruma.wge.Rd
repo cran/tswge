@@ -3,7 +3,8 @@
 \title{Function for forecasting from known model which may have (1-B)^d, seasonal, and/or other nonstationary factors}
 \description{This function calculates forecasts from a known model that may have stationary ARMA components as well as (1-B)^d, seasonal, and/or other nonstationary factors}
 \usage{
-fore.aruma.wge(x,phi=0,theta=0,d=0,s=0,lambda=0,n.ahead=2,lastn=FALSE,plot=TRUE,limits)
+fore.aruma.wge(x,phi=0,theta=0,d=0,s=0,lambda=0,n.ahead=5,
+lastn=FALSE,plot=TRUE,alpha=.05,limits=TRUE)
 }
 \arguments{
   \item{x}{Realization to be forecast from}
@@ -15,6 +16,7 @@ fore.aruma.wge(x,phi=0,theta=0,d=0,s=0,lambda=0,n.ahead=2,lastn=FALSE,plot=TRUE,
   \item{n.ahead}{Number of steps ahead to forecast}
   \item{lastn}{Logical, lastn=TRUE plots forecasts for the last n.ahead values in the realization}
   \item{plot}{Logical, plot=TRUE plots forecasts}
+  \item{alpha}{Alpha for prediction limits}
   \item{limits}{Logical, limits=TRUE plots prediction limits}
 }
 \value{
@@ -23,10 +25,11 @@ fore.aruma.wge(x,phi=0,theta=0,d=0,s=0,lambda=0,n.ahead=2,lastn=FALSE,plot=TRUE,
   \item{ul}{Upper limits}
   \item{resid}{Residuals}
   \item{wnv}{White noise variance estimate}
+  \item{xbar}{Sample mean of data in x}
   \item{se}{Se for each forecast}
   \item{psi}{Psi weights}
-  \item{ptot}{Total order of all AR components, phi, d, s, and lambda}
-  \item{phtot}{Coefficients after multiplying all stationary and nonstationary coponents on the AR side of the equation}
+  \item{ptot.fore}{Total order of all AR components, phi, d, s, and lambda}
+  \item{phtot.fore}{Coefficients after multiplying all stationary and nonstationary coponents on the AR side of the equation}
 }
 \references{"Applied Time Series Analysis with R, 2nd edition" by Woodward, Gray, and Elliott}
 \author{Wayne Woodward}

@@ -6,7 +6,6 @@ qmin=min(q)
 nr=(pmax-pmin+1)*(qmax-qmin+1)
 aval <- matrix(0, nrow=nr,ncol=3)
 mytype=type
-
 # 
 cat('---------WORKING... PLEASE WAIT...','\n')
 cat('\n')
@@ -31,7 +30,7 @@ for(iq in qmin:qmax)
        cat('Error in aic calculation at',ip,iq,'\n')
       aval[indx,]<-c(ip,iq,999999)
     }
-    #cat("debug ",ip,iq,unlist(ret), "\n") 
+#    cat("debug ",ip,iq,unlist(ret), "\n") 
 }
 }
 
@@ -52,6 +51,6 @@ for(iq in qmin:qmax)
     if(mytype=='aicc') {colnames(sorted_aval)=c('   p','   q','       aicc')}
     if(mytype=='bic') {colnames(sorted_aval)=c('   p','   q','       bic')}
      #aic.wgeaval
-     sorted_aval[1:5,,]
-
+#     sorted_aval[1:5,,]
+print(sorted_aval[1:5,],row.names=FALSE)
 }
