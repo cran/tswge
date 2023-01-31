@@ -1,13 +1,22 @@
 fore.arima.wge=function(x,phi=0,theta=0,d=0,s=0, n.ahead=5,lastn=FALSE, plot=TRUE,alpha=.05,limits=TRUE)
 {
+#p=0
+#q=0
+#d=0
+#s=0
+#n.ahead=5
+#lastn=FALSE
+#plot=TRUE
+#alpha=.05
+#limits=TRUE
+#x=xt
+#phi=c(1.7,-.72)
 lambda=0
 n=length(x)
 p=length(phi)
-
-
-if(sum(phi^2)==0) {p=0
-            fac1=0}
-else {fac1=phi}
+if(sum(phi^2)==0) {p=0}
+if(sum(phi^2)==0) {fac1=0
+} else {fac1=phi}
 
 #if(phi==0) {p=0
 #            fac1=0}
@@ -50,7 +59,9 @@ ptot.res=d+s+dlam
 # cat('phitot.res',phitot.res,'\n')
 # cat('ptot.fore=',ptot.fore,'\n')
 # cat('phitot.fore',phitot.fore,'\n')                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-y.arma=artrans.wge(x,phi.tr=phitot.res,plottr=FALSE)
+if(sum(abs(phitot.res))==0) {y.arma=x
+} else {y.arma=artrans.wge(x,phi.tr=phitot.res,plottr=FALSE)}
+cat('y.arma',y.arma,'\n')
 #
 
 #BACKCAST RESIDUALS BASED ON FIT TO TRANSFORMED ARMA DATA
@@ -73,7 +84,7 @@ if (ptot.fore> 0) {for(jp in 1:ptot.fore) {const=const-phitot.fore[jp]}}
 #
 #
 maconst=const*xbar
-p1=max(ptot.fore+1,q+1)
+p1=max(ptot.res+1,q+1)
 #
 #Caclulating residuals (old)
 #
@@ -177,4 +188,4 @@ ul=ulplot[2:nap1]
 out1=list(f=f,ll=ll,ul=ul,resid=resid,wnv=wnv,xbar=xbar,se=se,psi=xi,ptot.fore=ptot.fore,phitot.fore=phitot.fore)
 return(out1)
 }
-
+ 

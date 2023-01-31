@@ -25,13 +25,11 @@ plotts.sample.wge=function(x,lag.max=25,trunc=0,arlimits=FALSE,speclimits=c(0,0)
 xbar=mean(x)
 cex.labs=c(1,1,1)
 if(periodogram == TRUE) {
-dev.new(width=8,height=6.5)
 numrows=2
 numcols=2
 par(mfrow=c(numrows,numcols),mar=c(4.3,3.5,1.6,1))}
 #
 if(periodogram == FALSE) {
-dev.new(width=11,height=3)
 numrows=1
 numcols=3
 par(mfrow=c(numrows,numcols),mar=c(4.3,3.5,1.6,1))}
@@ -150,6 +148,10 @@ for (i in 1:nf) {segments(freq[i],min.per,freq[i],db[i])
 #
 if (periodogram == FALSE) {out1=list(xbar=xbar,autplt=autplt,freq=freq,dbz=dbz)}
 if (periodogram == TRUE) {out1=list(xbar=xbar,autplt=autplt,freq=freq,dbz=dbz,db=db)}
+
+#reset graphing parameters
+par(mfrow=c(1,1))
+
 return(out1)                       
 }
 

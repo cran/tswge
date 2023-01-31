@@ -1,4 +1,4 @@
-d0dff58e1f8049497ba1933cc082a457 *DESCRIPTION
+3797aa43ada9a5baa22f4304ca9b99cb *DESCRIPTION
 8067ddf485465d4e9f0c716f1fa70a8f *NAMESPACE
 e9197926f9a06fd0973c5d7c277275d4 *R/aic.ar.wge.R
 b109189614c71ff9b9c97c1ad0c20fe3 *R/aic.burg.wge.R
@@ -18,7 +18,7 @@ fc41a444f5c2f364fcc967e8c834f44a *R/est.farma.wge.R
 f494cbba68b9ed3f1ad05684cab43a33 *R/factor.comp.temp.wge.R
 7cbbb62c48c6eab39526a987fba6e6b3 *R/factor.comp.wge.R
 40aee5e7352f6355c7419f3114b6cc0c *R/factor.wge.R
-8320e670c988bb395b2d6143a1a94069 *R/fore.arima.wge.R
+9ab00452d418845fa1dfae82bc6d32bc *R/fore.arima.wge.R
 26229d2a09bac96e09134678163e1806 *R/fore.arma.wge.R
 d19e45e6649858c927892d3d0e6cc5e1 *R/fore.aruma.wge.R
 ef2562f166bdec077b0fa0bb3782f894 *R/fore.farma.wge.R
@@ -38,8 +38,8 @@ baf2b804c085801bfe074c1107830831 *R/gen.glambda.wge.R
 a8f537fdab746be49275a95626c23183 *R/hilbert.wge.R
 71a4ee3f4f5c451ae418b17aacd9042c *R/is.glambda.wge.R
 e05c60cf0ff14639b1056f9202c7b7d2 *R/is.sample.wge.R
-db62797254fa4b6e2ac7d6443c6ecb17 *R/kalman.miss.wge.R
-3fc1998ab98157c8732054e9435d1db6 *R/kalman.wge.R
+8e10635ee9a5bc3ef27ef3374c9a70bf *R/kalman.miss.wge.R
+8b1ea91ed67ad64856bc9aabb81743ef *R/kalman.wge.R
 728873d5c54c5120497c00394bd919d8 *R/ljung.wge.R
 4a4e717b3dfe162f00b18cbe78c896ca *R/ma.pred.wge.R
 8c91419a4145d42ffa8927986fd3ba31 *R/ma.smooth.wge.R
@@ -53,7 +53,7 @@ f0c172d5a7f8e82ab39b3d1474090481 *R/pacfts.wge.R
 7b0b00a0357360955713fd3abb7201f7 *R/plotts.dwt.wge.R
 23f8c19ae192d4d7ba3284e20b0c6092 *R/plotts.mra.wge.R
 eaa807fc3a289726169073308da3a08b *R/plotts.parzen.wge.R
-5906776e87412a64392fffb4226f29b2 *R/plotts.sample.wge.R
+c980895682ef2e0eede72989d0477598 *R/plotts.sample.wge.R
 b1552c61be86debf3a50d4cdc1a12de8 *R/plotts.true.wge.R
 97787873e387eae1df1e996c54a6b944 *R/plotts.wge.R
 d9ae17a593388eb1700cdfb8ccc523cb *R/psi.weights.wge.R
