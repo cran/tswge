@@ -1,4 +1,4 @@
-3797aa43ada9a5baa22f4304ca9b99cb *DESCRIPTION
+7573cb463fb310861edc46bae29606a5 *DESCRIPTION
 8067ddf485465d4e9f0c716f1fa70a8f *NAMESPACE
 e9197926f9a06fd0973c5d7c277275d4 *R/aic.ar.wge.R
 b109189614c71ff9b9c97c1ad0c20fe3 *R/aic.burg.wge.R
@@ -18,7 +18,7 @@ fc41a444f5c2f364fcc967e8c834f44a *R/est.farma.wge.R
 f494cbba68b9ed3f1ad05684cab43a33 *R/factor.comp.temp.wge.R
 7cbbb62c48c6eab39526a987fba6e6b3 *R/factor.comp.wge.R
 40aee5e7352f6355c7419f3114b6cc0c *R/factor.wge.R
-9ab00452d418845fa1dfae82bc6d32bc *R/fore.arima.wge.R
+2c4e500bf109b16c28cd37edcdb7c488 *R/fore.arima.wge.R
 26229d2a09bac96e09134678163e1806 *R/fore.arma.wge.R
 d19e45e6649858c927892d3d0e6cc5e1 *R/fore.aruma.wge.R
 ef2562f166bdec077b0fa0bb3782f894 *R/fore.farma.wge.R
@@ -34,7 +34,7 @@ d1ede646130c31c65c26f794d542266d *R/gen.garch.wge.R
 55dc743ac4524acf03a25ede616bb0da *R/gen.garma.wge.R
 5eba9c22cfa20a1dffdabf43e48f0893 *R/gen.geg.wge.R
 baf2b804c085801bfe074c1107830831 *R/gen.glambda.wge.R
-990fcab5cb16bfc2ae461fe19cbbbc4f *R/gen.sigplusnoise.wge.R
+985ded8416f892437289fbeb7fcd713b *R/gen.sigplusnoise.wge.R
 a8f537fdab746be49275a95626c23183 *R/hilbert.wge.R
 71a4ee3f4f5c451ae418b17aacd9042c *R/is.glambda.wge.R
 e05c60cf0ff14639b1056f9202c7b7d2 *R/is.sample.wge.R
@@ -58,7 +58,7 @@ b1552c61be86debf3a50d4cdc1a12de8 *R/plotts.true.wge.R
 97787873e387eae1df1e996c54a6b944 *R/plotts.wge.R
 d9ae17a593388eb1700cdfb8ccc523cb *R/psi.weights.wge.R
 0c6d3a8da3c76503ed6f301eb921af42 *R/roll.win.rmse.nn.wge.R
-34055eead30e3c1449dad84b1b1bad70 *R/roll.win.rmse.wge.R
+a30bc3a533f4b27b6c4059902b3a9d61 *R/roll.win.rmse.wge.R
 85bd0fe2d2287e9496dd2f05e3a288f5 *R/sample.spec.wge.R
 a8beea15f485c5b1b0b79d63d21b998c *R/slr.wge.R
 55baf07217542319a6bd2c41fd62a599 *R/trans.to.dual.wge.R
@@ -379,7 +379,7 @@ a1ea2a96b8c3aa14e426c57846784d4d *man/trans.to.original.wge.Rd
 a5e08856da1f74d37e3f363456ba2cfb *man/tswge-package.Rd
 9ef7b55084d75d185b94062360c70902 *man/tx.unemp.adj.Rd
 142748751d3633c3f8dc59398cf8bb25 *man/tx.unemp.unadj.Rd
-87e474795b993206d73447cb67262d5b *man/unit.circle.wge.Rd
+bbbb078d554180ec03fe641c0c3d62af *man/unit.circle.wge.Rd
 e3230544a8740a5d2a913fba0b0cb8c2 *man/us.retail.Rd
 b418d661d48bd2f19c1c2c9207d58558 *man/uspop.Rd
 f438d07856a12466711d8083381f2843 *man/wages.Rd

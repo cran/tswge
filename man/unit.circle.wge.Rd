@@ -11,7 +11,7 @@
 \value{returns a plot of the root with respect to the unit circle}
 \references{"Applied Time Series Analysis with R, 2nd edition" by Woodward, Gray, and Elliott}
 \author{Bivin Sadler}
-\examples{unit.circle.wge = function(real = .9, imaginary = .95)}
+\examples{unit.circle.wge(real = .9, imaginary = .95)}
 \keyword{ Unit Circle }
 \keyword{ Root}
 \keyword{ Stationary}

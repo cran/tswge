@@ -7,7 +7,7 @@ gen.sigplusnoise.wge=function (n, b0 = 0, b1 = 0, coef = c(0, 0), freq = c(0, 0)
     std = sqrt(vara)
     t = 1:n
     zt = gen.arma.wge(n = n, phi = phi, theta = 0, vara = vara, 
-        sn = sn)
+        sn = sn, plot = FALSE) # Thanks to Dr. Turner's SFA TS Class for the plot find! :) 9-5-2023
     x = b0 + b1 * t + coef[1] * cos(2 * pi * freq[1] * t + psi[1]) + 
         coef[2] * cos(2 * pi * freq[2] * t + psi[2]) + zt
     numrows <- 1

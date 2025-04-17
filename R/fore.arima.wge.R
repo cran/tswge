@@ -61,7 +61,7 @@ ptot.res=d+s+dlam
 # cat('phitot.fore',phitot.fore,'\n')                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 if(sum(abs(phitot.res))==0) {y.arma=x
 } else {y.arma=artrans.wge(x,phi.tr=phitot.res,plottr=FALSE)}
-cat('y.arma',y.arma,'\n')
+#cat('y.arma',y.arma,'\n')
 #
 
 #BACKCAST RESIDUALS BASED ON FIT TO TRANSFORMED ARMA DATA
